@@ -31,22 +31,7 @@
     return new Handlebars.SafeString(theLink);
   });
  
-  // 5b. Pass an attribute to a helper function
-  Handlebars.registerHelper("changeColor", function(text, options){
- 
-    text = Handlebars.Utils.escapeExpression(text);
- 
-      // You can access the attributes by name
-      if(options.hash.color === "red"){
-        return new Handlebars.SafeString("<span class='redText'>" + text + "</span>");
-      } else if(options.hash.color === "blue"){
-        return new Handlebars.SafeString("<span class='blueText'>" + text + "</span>");
-      } else {
-          return new Handlebars.SafeString("<span class='greenText'>" + text + "</span>");
-      }
-  });
- 
-  // 6b. You can also pass options that can be used by all
+  // 5b. You can also pass options that can be used by all
   // helpers in the template
   Handlebars.registerHelper("sayNo", function(options){
     switch(options.data.lang){
@@ -73,9 +58,9 @@
     // 3b. Passing tags to the triple stash
     rodneyBio: "<i>Rodney Dangerfield (formerly Jacob Cohen) was born on November 22, 1921, in Babylon, New York. He started performing stand-up comedy in his teens as 'Jack Roy', but finding that comedy didn't pay the bills, he spent the 1950s working as a salesman. Re-entering show business in the early 1960s as 'Rodney Dangerfield', he got a little more respect. He opened Dangerfield's comedy club in the 1970s and starred in a series of hit comedy films in the 1980s including Caddyshack. Dangerfield died in 2004.</i>"
   }
-  // 6c. Say hello in passed language
+  // 5c. Say hello in passed language
   , {data: {
-    lang: "spanish"
+    lang: "french"
   }
   });
  

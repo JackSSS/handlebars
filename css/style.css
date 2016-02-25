@@ -21,8 +21,13 @@ img {
 }
 
 iframe {
- 	padding: 5px;
+	float: center;
 }
+
+ul {
+  list-style-type: square;
+}
+
 
 /* Main Layout Styles
 ================================ */
@@ -54,6 +59,11 @@ iframe {
  	background-color: #b7c0c7;
 }
 
+
+.video {
+ 	padding: 10px;
+}
+
 @media (min-width: 768px) { 
 
 	/* Main Layout Styles
@@ -67,30 +77,17 @@ iframe {
 		top: 0;
 		width: 100%;
 	}
-	
-	/* Imagery
-	================================ */
-
-	.feat-img {
-		width: 45%;
-		float: left;
-		margin: 5px 20px 10px 0;
+    
+    .main-banner {
+		background: #000000;
+		text-align: center;
+		padding: 50px 15px;
+		margin-bottom: 20px;
 	}
-
 }
 
 @media (min-width: 1px) and (max-width: 767px)  {
 	.main-nav li {
 		margin-top: 12px;
 	}
-}
-
-.redText {
-	color: red;
-}
-.blueText {
-	color: blue;
-}
-.greenText {
-	color: green;
 }
