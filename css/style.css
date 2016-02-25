@@ -13,7 +13,7 @@ body {
 body {
 	font: normal 1em/1.5 sans-serif;
 	color: #222;
-	background-color: #edeff0;
+	background-color: #ffffff;
 }
 img {
 	border: solid 1px;
@@ -23,11 +23,6 @@ img {
 iframe {
 	float: center;
 }
-
-ul {
-  list-style-type: square;
-}
-
 
 /* Main Layout Styles
 ================================ */
