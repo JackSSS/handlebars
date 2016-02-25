@@ -1,6 +1,6 @@
   // Structure how I want the data to dynamically be
   // placed by defining the keys in between {{}}
-  var myInfo = "<p>My name is {{name}} and I live at {{street}} in {{city}}, {{state}}. Rodney Dangerfield was one of my favorite comedians.</p>";
+  var myInfo = "<p>My name is {{name}} and I live in {{city}}, {{state}}. Rodney Dangerfield was one of my favorite comedians.</p>";
  
   // Generate a JS function that will create the output
   var template = Handlebars.compile(myInfo);

@@ -1,0 +1,96 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* Page Styles
+================================ */
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font: normal 1em/1.5 sans-serif;
+	color: #222;
+	background-color: #edeff0;
+}
+img {
+	border: solid 1px;
+	padding: 5px;
+}
+
+iframe {
+ 	padding: 5px;
+}
+
+/* Main Layout Styles
+================================ */
+
+.main-header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(56,64,71,0.8);; 
+}
+.main-logo {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.5em;
+}
+.main-logo {
+	display: block;
+	text-align: left;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+
+.main-footer {
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+ 	background-color: #b7c0c7;
+}
+
+@media (min-width: 768px) { 
+
+	/* Main Layout Styles
+	================================ */
+
+	body {
+		padding-top: 75px;
+	}
+	.main-header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	
+	/* Imagery
+	================================ */
+
+	.feat-img {
+		width: 45%;
+		float: left;
+		margin: 5px 20px 10px 0;
+	}
+
+}
+
+@media (min-width: 1px) and (max-width: 767px)  {
+	.main-nav li {
+		margin-top: 12px;
+	}
+}
+
+.redText {
+	color: red;
+}
+.blueText {
+	color: blue;
+}
+.greenText {
+	color: green;
+}
