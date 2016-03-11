@@ -27,14 +27,16 @@
   </section>
   <!-- It is better to separate your template from the JS and you do that by placing the template in its own tag -->
   <script id="quote-template" type="text/x-handlebars-template">
- 
+  <div class="quotes">
   <h3> My Favorite {{name}} Quotes</h3>
     <ul>
     {{!-- 2. The each helper can insert an array of data --}}
     {{#each quotes}}
-      <li>{{quote}}</li><hr/></br>
+      <quote><li>{{quote}}</li></p></quote>
     {{/each}}
     </ul>
+    </div>
+  <div class="quotes">
    <h3> Life Summary</h3>
     {{!-- 3. You can use Html tags with triple-stash for escaping--}}
     {{{rodneyBio}}}
@@ -44,7 +46,7 @@
  
     {{!-- 5. Say "I get no respect" in defined language --}}
     {{sayNo}}
- 
+   </div>
   </script>
  
   <script src="app.js" type="text/javascript"></script>
